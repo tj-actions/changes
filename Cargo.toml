@@ -1,0 +1,20 @@
+[package]
+name = "changed_files"
+authors = ["Tonye Jack <jtonye@ymail.com>"]
+version = "0.1.0"
+description = "A command-line tool to get the changed files between two git commits"
+repository = "https://github.com/tj-actions/changed-files"
+homepage = "https://github.com/tj-actions/changed-files"
+readme = "README.md"
+license = "MIT"
+edition = "2021"
+categories = ["command-line-utilities"]
+rust-version = "1.68.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4.2.7", features = ["derive"] }
+git2 = "0.17.1"
+glob = "0.3.1"
+json2file = "1.7.2"
